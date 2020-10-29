@@ -1,0 +1,34 @@
+[
+  {
+    "image":"img/man.svg",
+    "rating": 5,
+    "comment": "“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec.“",
+    "name": "Edward Newgate",
+    "position": "Founder Circle"
+  },
+
+  {
+    "image":"img/man.svg",
+    "rating": 1,
+    "comment": "liked nothing",
+    "name": "John Doe",
+    "position": "Homeless"
+  },
+
+  {
+    "image": "img/thinking_man.jpeg",
+    "rating": 4,
+    "comment": "The trip was wonderfull. Will continue cooperation definitely! But communication was too slow",
+    "name": "Edward Whyte",
+    "position": "Sales manager"
+  },
+
+  {
+    "image":"img/white_man.jpeg",
+    "rating": 3,
+    "comment": "Totally middle performance. They need to perform much better!",
+    "name": "Sam Smith",
+    "position": "HR Director in BlaBlah Corporation"
+  }
+
+]
