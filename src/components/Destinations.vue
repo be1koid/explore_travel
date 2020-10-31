@@ -5,31 +5,45 @@
             <a class="btn_view">View all > </a>
         </div>
 
-        <div class="destination_suggestions">
-            <div class="raya_container">
-                <img src="img/Raja ampattry.svg" alt="Raja Ampat">
-            </div>
+        <div class="destination_suggestions" v-if="destinations.length >0">
+            <div class="place_container" v-for="part in destinations" :key="part.picture">
+                <img :src="part.picture" alt="destination_picture">
+                <div class="destination_name_wrapper">
+                    <div class="destination_rectangle"></div>
+                    <a class="location text">{{part.location1}}</a><br>
+                    <a class="country text">{{part.country1}}</a>
 
-            <div class="china_container">
-                <img src="img/Fanjingshan_try.svg" alt="Fanjingshan">
+                </div>
             </div>
-
-            <div class="switzerland_container">
-                <img src="img/Vevey_try.svg" alt="Vevey">
-            </div>
-
-            <div class="montenegro_container">
-                <img src="img/Skadar_try.svg" alt="Skadar">
-            </div>
-
         </div>
     </section>
 </template>
 
 <script>
     export default {
-        name: "Destinations"
+        name: "Destinations",
+
+        data: function () {
+            return {
+                destinations: [
+
+                ],
+
+                index: 0,
+
+            }
+        },
+
+        mounted() {
+            fetch("api/destinations.json").then(function(response) {
+                return response.json()
+            }).then((response)=> {
+                this.destinations= response
+            })
+        }
     }
+
+
 </script>
 
 <style scoped>

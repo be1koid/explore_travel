@@ -10,8 +10,8 @@ body{
     src: url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;700&display=swap");
 }
 
-nav{
-    margin-left: 100px;
+.navigation{
+    margin-left: 75px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,20 +19,28 @@ nav{
     padding-bottom: -5px;
 }
 .navig_container{
-    margin-left: 100px;
+    margin-left: 515px;
     margin-right: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 .nav_words{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding-right: 34px;
+    font-family: "Inter", serif;
+    font-size: 16px;
+    font-weight: 400;
 }
 
+
+
 .login_button{
+    padding-top: 9px;
+    margin-top: 5px;
     margin-right: 20px;
     text-align: center;
     box-sizing: border-box;
@@ -46,9 +54,11 @@ nav{
     color: #FB8F1D;
 }
 .register_button{
-    box-sizing: border-box;
+    padding-top: 11px;
+    margin-top: 5px;
     text-align: center;
-    padding-top: 2px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
     width: 132px;
     height: 44px;
     border-radius: 8px;
@@ -75,7 +85,7 @@ nav{
 }
 .finder_header{
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 600;
     font-family: "Inter", serif;
 }
 .finder{
@@ -84,6 +94,7 @@ nav{
     justify-content: left;
 }
 .arrows_down{
+    margin-top: -20px;
     position: absolute;
     padding-left: 165px;
 }
@@ -91,62 +102,27 @@ nav{
     font-family: "Inter", serif;
     font-weight: 300;
     display: grid;
-    grid-template-columns: 235px, 235px;
-    grid-template-rows: 50px, 50px;
+    grid-template-columns: 235px 235px;
+    grid-template-rows: 50px 50px;
     grid-row-gap: 35px;
     grid-column-gap: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 51px;
 }
-.drop_location{
-    grid-column: 1;
-    grid-row: 1;
+.drop{
+    font-family: "Inter", serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 15px;
+    box-sizing: border-box;
     padding-left: 20px;
     width: 220px;
     height: 52px;
+    color: #4A4C53;
     border-radius: 8px;
     border-style: solid;
-    border-width: 2px;
+    border-width: 0.8px;
     border-color: #AFB0B9;
     background-color: #ffffff;
-}
-
-.drop_activity{
-    grid-column: 2;
-    grid-row: 1;
-    padding-left: 20px;
-    width: 220px;
-    height: 52px;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #AFB0B9;
-    background-color: #ffffff;
-}
-.drop_grade{
-    grid-column: 1;
-    grid-row: 2;
-    padding-left: 20px;
-    width: 220px;
-    height: 52px;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #AFB0B9;
-    background-color: #ffffff;
-    margin-bottom: 35px;
-}
-.drop_date{
-    grid-column: 2;
-    grid-row: 2;
-    padding-left: 20px;
-    width: 220px;
-    height: 52px;
-    border-radius: 8px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #AFB0B9;
-    background-color: #ffffff;
-    margin-bottom: 35px;
 }
 
 .new_way_explr_world{
@@ -169,12 +145,16 @@ nav{
 }
 .section_text_wrapper{
     font-family: "Mulish", serif;
+    font-weight: 300;
     font-size: 17px;
     line-height: 30px;
     color: #7D7987;
     margin-bottom: 33px;
 }
 .btn{
+    font-family: "Mulish", serif;
+    font-weight: 700;
+    font-size: 17px;
     padding-top: 15px;
     box-sizing: border-box;
     text-align: center;
@@ -203,7 +183,35 @@ nav{
     flex-direction: row;
     justify-content: space-between;
 }
+.destination_rectangle{
+    position: absolute;
+    margin-top: -60px;
+    width: 120px;
+    height: 56px;
+    background-color: white;
+    border-top-right-radius: 8px;
+}
+
+.text{
+    font-family: "Inter", serif;
+    position: absolute;
+    margin-top: -42px;
+}
+.location{
+    color: #042521;
+    font-weight: 600;
+    font-size: 17px;
+}
+.country{
+    color: #80918E;
+    font-weight: 500;
+    font-size: 15px;
+}
+
 .btn_view{
+    font-family: "Inter", serif;
+    font-weight: 700;
+    font-size: 17px;
     color: #FB8F1D;
     margin-top: 60px;
 }
@@ -221,13 +229,7 @@ nav{
     margin-right: 180px;
     margin-top: 100px;
 }
-.text_for_guides_by{
-    font-family: "Mulish", serif;
-    font-size: 17px;
-    line-height: 30px;
-    color: #7D7987;
-    margin-bottom: 33px;
-}
+
 .testimonials{
     margin-left: 100px;
     margin-right: 100px;
@@ -360,6 +362,7 @@ footer{
 }
 .footer_subtitles{
     font-family: "Mulish", serif;
+
     font-size: 19px;
     font-weight: 700;
     color: black;
