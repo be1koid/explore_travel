@@ -14,8 +14,8 @@
     <div class="Edward_rectangle" v-if="testimonials.length >0">
       <img :src="testimonials[index].image" alt="Edward">
       <div class="switcher_edward">
-        <img class="prev" src="../assets/previous_btn.svg" alt="previous" @click="index -= 1">
-        <img class="next" src="../assets/next_btn.svg" alt="next" @click="index += 1">
+        <img class="prev" src="../assets/previous_btn.svg" alt="previous" @click="counter -= 1">
+        <img class="next" src="../assets/next_btn.svg" alt="next" @click="counter += 1">
       </div>
     </div>
   </section>
@@ -33,8 +33,17 @@ export default {
 
       ],
 
-      index: 0,
+      counter: 0,
 
+    }
+  },
+
+  computed: {
+    index () {
+      if ( this.counter < 0) {
+        return (this.testimonials.length + (this.counter % this.testimonials.length)) % this.testimonials.length
+      }
+        return this.counter % this.testimonials.length
     }
   },
 

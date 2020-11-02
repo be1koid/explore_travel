@@ -15,6 +15,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     font-family: "Inter", serif;
     padding-bottom: -5px;
 }
@@ -131,6 +132,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-content: center;
     margin-top: 270px;
 
 }
@@ -140,6 +142,7 @@ body{
 .explore{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     margin-left: 102px;
 
 }
@@ -349,6 +352,7 @@ footer{
     color: #848484;
     border-style: none none solid none;
     border-bottom-color: #C4C4C4;
+    border-width: 0.6px;
 }
 .rights_info_container{
     margin-top: 20px;
